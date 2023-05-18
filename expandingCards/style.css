@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #2b3957;
+}
+.container {
+    display: flex;
+    width: 90vh;
+}
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    height: 80vh;
+    border: 5px solid #eee;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.panel.active {
+    flex: 5;
+}
